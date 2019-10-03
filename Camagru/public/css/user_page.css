@@ -1,0 +1,279 @@
+.fix{
+	width: 100%;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+#space{
+	width: 100%;
+	height: 480px;
+	display: flex;
+	justify-content: center;
+}
+.studio{
+	display: flex;
+	flex-direction: column;
+}
+#user_space{
+	background-color: #ccc;
+	border-radius: 6px;
+	border: 2px solid #ccc;
+	width: 640px;
+	height: 480px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#user_img{
+	display: none;
+	width: 640px;
+	height: 480px;
+}
+video{
+	display: none;
+	width: 640px;
+	height: 480px;
+}
+canvas{
+	display: none;
+}
+#nav_cont{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#nav_spc{
+	width: 640px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#navi_rown{
+	display: flex;
+	width: 575px;
+	justify-content: center;
+}
+.navi{
+	width: 125px;
+	height: 70px;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#result_img{
+	width: 640px;
+	height: 480px; 
+}
+input[type='file']{
+	display: none;
+}
+.choice{
+	cursor: pointer;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 55px;
+	height: 55px;
+	background-size: 55px;
+	background-repeat: no-repeat;
+}
+.add_img{
+	background-image: url('/Camagru/public/img/icons/up_img_black.png');
+}
+.add_img:hover{
+	width: 64px;
+	height: 64px;
+	background-image: url('/Camagru/public/img/icons/up_img_gradient.png');
+	background-size: 64px;
+}
+
+.take_photo{
+	background-image: url('/Camagru/public/img/icons/take_photo_black.png');
+}
+.take_photo:hover{
+	width: 64px;
+	height: 64px;
+	background-image: url('/Camagru/public/img/icons/take_photo_gradient.png');
+	background-size: 64px;
+}
+.remove_img{
+	background-image: url('/Camagru/public/img/icons/remove_black.png');
+}
+.remove_img:hover{
+	width: 64px;
+	height: 64px;
+	background-image: url('/Camagru/public/img/icons/remove_gradient.png');
+	background-size: 64px;
+}
+.save_to_myprofile{
+	background-image: url('/Camagru/public/img/icons/save_black.png');
+}
+.save_to_myprofile:hover{
+	width: 64px;
+	height: 64px;
+	background-image: url('/Camagru/public/img/icons/save_gradient.png');
+	background-size: 64px;
+}
+.add_content{
+	background-image: url('/Camagru/public/img/icons/add_black.png');
+}
+.add_content:hover{
+	width: 64px;
+	height: 64px;
+	background-image: url('/Camagru/public/img/icons/add_gradient.png');
+	background-size: 64px;
+}
+#add_content_space{
+	display: flex;
+	justify-content: flex-end;
+	width: 65px;
+}
+#c{
+	display: flex;
+}
+#fil{
+	display: none;
+}
+.content_space{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	width: 375px;
+}
+#show_user_img{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content_space > .a1{
+	cursor: pointer;
+	width: 269px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #ccc;
+	margin-bottom: 25px;
+	border-radius: 8px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.content_space > div > p{
+	text-align: center;
+	font-size: 23px;
+	font-family: 'Dancing Script', cursive;
+	color: #000;
+	font-weight: bold;
+}
+#up_down{
+	width: 20px;
+	height: 20px;
+}
+.a2{
+	display: none;
+	width: 270px;
+	height: 200px;
+	background-color: #fff;
+	margin-bottom: 2px;
+	overflow-y: scroll;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.a2_img{
+	cursor: move;
+	width: 50px;
+	height: 50px;
+	margin: 2px;
+}
+.resize{
+	overflow: hidden;
+	resize: both;
+}
+#user_area{
+	width: 640px;
+	height: 480px;
+}
+
+/*Result space*/
+#result_space{
+	width: 100%;
+	height: 130vh;
+	display: flex;
+	justify-content: center;
+	display: none;
+	margin-bottom: 60px;
+}
+#user_result_area{
+	display: flex;
+	border-radius: 6px;
+    border: 2px solid #ccc;
+	width: 640px;
+	height: 480px;
+	border: 2px solid #ccc;
+	border-radius: 6px;
+}
+#ff{
+	margin-top: 56px;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#add_img_to_my_profile{
+	margin: 10px;
+	font-size: 26px;
+	font-family: 'Dancing Script', cursive;
+	color: #079BCF;
+}
+#nav_result_space{
+	width: 640px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#nav_result_cons{
+	display: flex;
+	width: 500px;
+	height: 60px;
+	justify-content: space-between;
+	align-items: center;
+}
+#message{
+	margin-top: 15px;
+	margin-bottom: 5px;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+	font-size: 23px;
+	color: #079BCF;
+}
+#img_was_save{
+	width: 640px;
+	height: 480px;
+	position: absolute;
+	display: none;
+}
+#img_was_save > p{
+	width: 640px;
+	position: absolute;
+	font-weight: bold;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Dancing Script', cursive;
+}
+#img_was_save > img{
+	width: 480px;
+	height: 480px;
+	margin-left: 80px;
+}
+@-moz-document url-prefix() {
+	#result_space{
+		height: 200vh;
+	}
+}

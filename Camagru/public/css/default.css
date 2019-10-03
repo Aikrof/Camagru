@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+html{
+	width: 100%;
+}
+body{
+	display: flex;
+	flex-direction: column;
+}
+header{
+	width: 100%;
+	height: 70px;
+	display: flex;
+	background-color: orange;
+}
+header > #logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+}
+header > #logo > a{
+	font-size: 45px;
+	font-family: 'Dancing Script', cursive;
+	color: #fff;
+}
+header > #logo > a:hover{
+	color: #000;
+	transition: box-shadow 2s ease, color 1s ease;
+}
+header > .usr{
+	width: 220px;
+	margin-right: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-left: auto;
+}
+#main{
+	width: 100%;
+	min-height: calc(100vh - 70px);
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: inline-flex;
+	justify-content: center;
+	justify-content: space-around;
+}
+main{
+	border-radius: 5px;
+	width: 70%;
+	border: 1px solid #dcdfe6;
+}
+footer{
+	width: 100%;
+	height: 60px; 
+	background-color: #9e1f8b;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+address{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	margin-right: 50px;
+	font-style: italic;
+	font-size: 17px;
+}
+#unit{
+	margin-top: 3px;
+}
+#log_user{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 108px;
+	text-align: center;
+	height: 70px;
+}
+#user_ico_A2kU{
+	cursor: pointer;
+	margin-top: 2px;
+	width: 44px;
+	height: 44px;
+	background: url('/Camagru/public/img/icons/user_black.png');
+	background-repeat: no-repeat;
+	background-size: 45px;
+}
+#user_echo{
+	cursor: pointer;
+	font-size: 20px;
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+}
+#log_in{
+	width: 72px;
+	margin-right: 7px;
+}
+#registration{
+	width: 108px;
+	margin-right: 20px;
+}
+.user_func{
+	display: flex;
+	justify-content: center;
+	font-size: 18px;
+	align-items: center;
+	width: 70px;
+	height: 40px;
+	color: #fff;
+	cursor: pointer;
+	transition: box-shadow 2s ease, color 1s ease;
+}
+#header_user_container{
+	width: calc(100vw - 220px - 200px);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#search_user{
+	position: relative;
+	/*width: 340px;*/
+	display: flex;
+	align-items: center;
+}
+#search_form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#search{
+	font-size: 18px;
+	font-family: "Times New Roman";
+	padding-left: 10px;
+	width: 220px;
+	height: 35px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+}
+#search:hover{
+	border-color: #079BCF;
+}
+#search:focus-within{
+	border-color:  #079BCF;
+}
+#search_leb{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 35px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+#search_hiden_butt{
+	display: none;
+}
+#search_icon{
+	margin-top: 5px;
+	cursor: pointer;
+	width: 22px;
+	height: 22px;
+}
+#search_result{
+	display: none;
+	flex-direction: column;
+	/*align-items: center;*/
+	position: absolute;
+	z-index: 1;
+	top: 35px;
+	left: 8px;
+	width: 200px;
+	height: 200px;
+	border: 2px solid #ccc;
+	border-top: none;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	background-color: #fff;
+	overflow-y: auto;
+}
+.res_search_block{
+	margin-top: 5px;
+	display: flex;
+	align-items: center;
+}
+.res_search_user_icon{
+	cursor: pointer;
+	margin-left: 5px;
+	width: 32px;
+	height: 32px;
+	border: 2px solid #ccc;
+	border-radius: 100%;
+}
+.res_search_user_login{
+	cursor: pointer;
+	margin-left: 15px;
+	font-size: 22px;
+	font-family: 'Dancing Script';
+}
+.user_func:hover{
+	background-position: 0 100%;
+	font-weight: bolder;
+	border-radius: 4px;
+	box-shadow: inset 0 0 0 2em rgba(255,255,255,0.5);
+	color: #000000;
+}
+.unselectable{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#log_container{
+	width: 100%;
+	height: 100vh;
+	overflow-y: auto;
+	position: absolute;
+	display: flex;
+	flex-wrap: column;
+	justify-content: center;
+}
+#log_form{
+	width: 460px;
+	height: 520px;
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid #dcdfe6;
+	overflow: auto;
+}
+#confirm_con{
+	margin-top: 123px;
+	margin-right: 17px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 520px;
+	height: 480px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	background-color: #fff;
+}
+#con{
+	margin-top: 123px;
+	margin-right: 17px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 520px;
+	height: 500px;
+	border: 2px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+.exit{
+	cursor: pointer;
+	position: absolute;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-top: 130px;
+	margin-left: 230px; 
+}
+.exit:before{
+	content: "\2716";
+	color: #ccc;
+    font-size: 27px;
+}
+.exit:hover:before{
+	color: red;
+}
+#Confirm_em_adr{
+	position: absolute;
+	padding: 4px;
+	margin-top: 244px;
+	font-size: 30px;
+	border: 0px;
+	background: #fff;
+}
+#signIn{
+	position: absolute;
+	padding: 4px;
+	margin-top: 148px;
+	font-size: 32px;
+	border: 0px;
+	background: #fff;
+}
+.rem{
+	margin: 10px 0 0 15px;
+}
+#remember{
+	display: none;
+}
+#remember + label{
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+#remember + label:before{
+	content: "\2714";
+    color: transparent;
+    display: inline-block;
+    border: 2px solid #ccc;
+	border-radius: 4px;
+    font-size: 18px;    
+    line-height: 19px;
+    margin: -5px 5px 0 0;
+    height: 17px;
+    width: 17px;
+    text-align: center;
+    vertical-align: middle;
+    transition: color ease .3s;
+}
+#remember:checked + label:before{
+	color: #fff;
+	background-color: #00a046;
+	border: 2px solid #00a046;
+    border-radius: 4px;
+}
+#logForm{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-left: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+	border-radius: 8px;
+	height: 404px;
+	background-color: #fff;
+}
+#confirm{
+	width: 340px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-left: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+	border-radius: 8px;
+	background-color: #fff;
+}
+.fix{
+	margin-top: 80px;
+	min-height: calc(100vh - 210px);
+	display: flex;
+	justify-content: center;
+}
+#rForm{
+	display: flex;
+	align-items: center;
+	border-left: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+	border-radius: 8px;
+	height: 350px;
+}
+#rForm > form > div{
+	text-align: center;
+	margin-top: 50px;
+}
+#fForm{	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border-left: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+	border-radius: 8px;
+	height: 300px;
+}
+#fForm > form > div{
+	text-align: center;
+	margin-top: 40px;
+}
+#sig{
+	position: absolute;
+	padding: 4px;
+	/*margin-top: 148px;*/
+	margin-top: -21px;
+	font-size: 32px;
+	border: 0px;
+	background-color: #fff;
+}
+.form > p{
+	position: absolute;
+	padding-left: 3px;
+	padding-right: 3px;
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: -22px;
+	margin-left: -78px;
+	border: 0px;
+	background-color: #fff;
+}
+.form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+input[type=text],
+input[type=email],
+input[type=password]{
+	padding-left: 10px;
+	font-size: 20px;
+	border-right: 2px solid #ccc;
+	border-left: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+	border-radius: 8px;
+	width: 250px;
+	height: 40px;
+	margin: 10px;
+}
+input:hover{
+	border-color: #079BCF;
+}
+button{
+	background: #079BCF;
+	border-radius: 8px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	height: 40px;
+	width: 140px;
+	overflow: hidden;
+	transition: all .3s cubic-bezier(.6,0,.4,1);
+}
+#send{
+	text-align: center;
+	margin-top: 40px;
+}
+#ok{
+	color: #fff;
+}
+.sub{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.passwd_forg{
+	/*text-align: center;*/
+	font-weight: bold;
+	margin: 10px 0 25px 25px;
+}
+#resend_activation{
+	color: #000;
+}
+#resend_activation:hover{
+	color: #079BCF;
+}
+.forgot{
+	cursor: pointer;
+	width: 100%;
+	color: #2f3439;
+	font-size: 16px;
+	text-align: center;
+}
+.forgot > p{
+	display: inline-block;
+}
+.forgot:hover{
+	color: #079BCF;
+	font-weight: bolder;
+}
+.error{
+	color: red;
+	font-size: 16px;
+	/*font-weight: bold;*/
+}
+.error > span{
+	color: #079BCF;
+	font-weight: bold;
+}
+textarea{
+	padding: 10px;
+	outline: none;
+	border: 2px solid #079BCF;
+	border-radius: 8px;
+	resize: none;
+	width: 600px;
+	height: 80px;
+	font-size: 14px;
+}
+#cong_container{
+	width: 100%;
+	height: calc(100vh - 70px - 60px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#cong{
+	font-size: 42px;
+	color: #079BCF;
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+.cong_info{
+	font-size: 32px;
+	font-style: italic;
+	color: #000;
+}
+#block_cong_home{
+	width: 40%;
+	height: 100px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+#cong_home{
+	font-family: 'Dancing Script', cursive;
+	font-size: 28px;
+	color: #000;
+	font-weight: bold;
+}
+#cong_home:hover{
+	font-size: 35px;
+	color: #079BCF;
+}
+@-moz-document url-prefix() {
+	.form > p{
+		margin-top: -48px;
+		margin-left: -158px;
+	}
+	.exit{
+		margin-top: 130px;
+		margin-left: 460px; 
+	}
+}
